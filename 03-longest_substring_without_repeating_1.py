@@ -1,5 +1,6 @@
 # More optimazation
 # sliding window more optimized
+
 # Runtime: 104 ms, faster than 62.31% of Python3 online submissions for Longest Substring Without Repeating Characters.
 
 class Solution(object):
