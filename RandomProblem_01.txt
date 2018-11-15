@@ -1,0 +1,63 @@
+Input: { i {j { k f } } { g } m }
+{ i   m }
+Output: 
+---kf
+--j
+--g
+-im
+
+// start
+
+i=0
+intermediateOutput = []
+Level = -1;
+
+while( i< Input.length){
+	
+	if( Input[i] == ‘{’){
+
+level ++;	
+
+}
+if( Input[i] == ‘}’){
+
+// Print output string 
+
+// print “-”
+For (i = 0; i<= level; i++)
+	print(“-”)
+
+temp= “”
+for( j in intermediateOutput [level]){
+	
+//check for duplicates	
+	if( temp.IndexOf(j) != -1){
+		print(j)
+temp = temp + j
+}
+	Else{
+		print(“^”+j)
+}
+}
+
+intermediateOutput [level] = “”
+Level = level - 1;
+}
+
+Else{
+ // append to intrmediate output
+
+
+if(intermediateOutput [level] == ‘undefined’){
+	intermediateOutput [level] = “”
+}
+
+intermediateOutput [level] = intermediateOutput [level] + Input[i]
+
+}
+
+}
+
+I  level  intermediate output
+
+
