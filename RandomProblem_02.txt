@@ -1,0 +1,15 @@
+/*
+There is an office organized in the form of a matrix[2D- Array]  . All the occupied seats are marked with 1 and empty seats are marked with 0. The members of the same team sit in a way that they can communicate with at least one of their teammate.  No team member sits very next to a different team’s member. Now you have to find out the total number of teams and the size of the biggest team.                                           
+                                            
+For example given below is the matrix representation of a given office.                                         
+Ex . arr = 
+[(1,1,1,0,0),                                            
+ (0,1,0,0,1),                                            
+ (1,0,0,1,1),                                            
+ (0,0,0,0,0),                                            
+ (1,1,1,0,1)]                                            
+                                            
+Output : Number = 4
+Max Size = 5
+Write a function that takes a matrix as the input and prints the number of teams and the size of the biggest team.                                          
+*/
